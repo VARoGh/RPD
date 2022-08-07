@@ -99,34 +99,3 @@ for i, paragraph in enumerate(doc.paragraphs):
             paragraph.add_run('\n')
 
 doc.save(file_name)
-
-# # задаем стиль текста по умолчанию
-# style = doc.styles['Normal']
-# # название шрифта
-# style.font.name = 'Calibri'
-# # размер шрифта
-# style.font.size = Pt(14)
-# p = doc.add_paragraph('Пользовательское ')
-# # добавляем текст прогоном
-# run = p.add_run('форматирование ')
-# # размер шрифта
-# run.font.size = Pt(16)
-# # курсив
-# run.font.italic = True
-# # добавляем еще текст прогоном
-# run = p.add_run('символов текста.')
-# # Форматируем:
-# # название шрифта
-# run.font.name = 'Arial'
-# # размер шрифта
-# run.font.size = Pt(18)
-# # цвет текста
-# run.font.color.rgb = RGBColor(255, 0, 0)
-# # + жирный и подчеркнутый
-# run.font.bold = True
-# run.font.underline = True
-# doc.save('test.docx')
-
-
-# for paragraph in doc.paragraphs:
-#     paragraph.style='Normal'  #Стили абзаца: Heading 1, Normal, Body Text
